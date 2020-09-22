@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Table </title>
+        <style>
+            table,th,td{border:1px solid black;}
+            table th,td{padding:10px;text-align: right;vertical-align: bottom;border-width: 0ch;}
+            table caption{font: bold;}
+        </style>
+    </head>
+    <body>
+        <table >
+            <caption> 학생 성적표</caption>
+            <tr>
+                <th>이름</th>
+                <th>학번</th>
+                <th> 교양 영어</th>
+                <th> 교양 수학</th>
+            </tr>
+            <tr>
+                <td>이보람</td>
+                <td>111111</td>
+                <td>90</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>홍길동</td>
+                <td>122222</td>
+                <td>50</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>아무게</td>
+                <td>222222</td>
+                <td>80</td>
+                <td>90</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="2">체르니(edupicker)의 블로거</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> notice - 공지사항</td>
+                    <td> Category - 어떤 주제가 있을까요?</td>
+                </tr>
+                <tr>
+                    <td> Tag 모음 - 최근에 사용한 태그들은...</td>
+                    <td> recent comment - 최근 질문에 대한 답변</td>
+                </tr>
+                <tr>
+                    <td> recent article - 최근에 올린 새로운 그들은...</td>
+                    <td> my link - 방문하면 좋은 site</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Copyright 2020</td>
+                </tr>
+            </tfoot>
+
+        </table>
+        <br>
+        <table border="1" style="lighting-color: blue;" cellspacing="2" cellpadding="2">
+            <colgroup>
+                <col span="3" style="background-color: aqua;"/>
+                <col style="background-color: yellow;"/>
+                <col style="margin: auto;"/>
+            </colgroup>
+            <tr style="background-color: bisque">
+                <th> 도서명 </th>
+                <th> 저  자 </th>
+                <th> 출판사 </th>
+                <th> 가  격 </th>
+            </tr>
+            <tr>
+                <td> A </td>
+                <td> 홍길동</td>
+                <td> 홍출판사</td>
+                <td>10,0000</td>
+            </tr>
+            <tr>
+                <td> B </td>
+                <td> 홍길동1</td>
+                <td> 홍출판사1</td>
+                <td>10,0001</td>
+            </tr>
+            <tr>
+                <td> C </td>
+                <td> 홍길동2</td>
+                <td> 홍출판사2</td>
+                <td>10,0002</td>
+            </tr>
+        </table>
+        <!--<table border="1" cellspacing="5" cellpadding="9"> -->
+        <table>    
+            <tr style="background-color: aqua">
+                <th colspan="2">업체(차종)</th>
+                <th>지지율(%)</th>
+                <th>조사지침</th>
+                <th>조사방법</th>
+                <th>표본수</th>
+                <th>조사기간</th>
+            </tr>
+            <tr>
+                <td rowspan="3">HyunDai</td>
+                <td>제네시스</td>
+                <td>20%</td>
+                <td>12.09</td>
+                <td>Home Phone + Cell Phone</td>
+                <td>1500</td>
+                <td>미디어리서치</td>
+            </tr>
+            <tr>
+                <td>에쿠스</td>
+                <td>23%</td>
+                <td>12.09</td>
+                <td>Cell Phone</td>
+                <td>1200</td>
+                <td>엠브레인</td>
+            </tr>
+            <tr>
+                <td>소나타</td>
+                <td>23%</td>
+                <td>12.09</td>
+                <td>Cell Phone</td>
+                <td>1300</td>
+                <td>엠브레인</td>
+            </tr>
+            <tr>
+                <td>KIA</td>
+                <td>K7</td>
+                <td>38%</td>
+                <td>12.09</td>
+                <td>Cell Phone</td>
+                <td>1300</td>
+                <td>중앙일보</td>
+            </tr>
+        </table>
+    </body>
+</html>

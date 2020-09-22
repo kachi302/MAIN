@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Section Test HTML </title>
+    <style type="text/css">
+        a:link {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section#sidebar {
+            float: left;
+            width: 25%;
+        }
+
+        section#posts {
+            float: right;
+            width: 74%;
+        }
+
+        section#posts aside {
+            float: right;
+            widht: 35%;
+            margin-left: 5%;
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+        footer#page_footer {
+            clear: both;
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header id="Page_header">
+        <h1> Today's IT News</h1>
+        <nav>
+            <a href="background.html"> 인터넷 </a>
+            <a href="line.html"> Cell Phone </a>
+            <a href="lounge.html"> Game </a>
+            <a href="myPod.html"> General </a>
+        </nav>
+    </header>
+    <section id="sidebar">
+        <header>
+            <h3> 최근 기사</h3>
+        </header>
+        <nav>
+            <ul>
+                <li> <a href="line.html"> Windows 10</a></li>
+                <li><a href="myPod.html"> WIndows 8</a> </li>
+                <li><a href="test_20200623.html"> Windows 7</a></li>
+
+            </ul>
+
+        </nav>
+    </section>
+    <section id="posts">
+        <header>
+            <h1>HTML 5 Preview</h1>
+        </header>
+        <article class="post">
+            <header>
+                <hgroup>
+                    <h2>HTML 5</h2>
+                    <h3> HTML 5에서 가장 관심 가는 요소(Elements)</h3>
+                </hgroup>
+            </header>
+            <aside>
+                <p> &quot;HTML 5 응용 프로그램 개발 시대 &quot;</p>
+            </aside>
+            <p>
+                W3C acb
+                dddd
+                eeee
+            </p>
+            <p> 여러분은 HTML 5 Canvas 기능을 이용해서 그래픽 관련한 다양한 작업을 할수 있습니다.</p>
+            <footer>
+                <address> Written by <a href="mailto:kachi302@empal.com">Jeon </a><br /> </address>
+            </footer>
+        </article>
+        <footer>
+            <p> 3번의 마지막 footer 인데 공백으로 두었음</p>
+        </footer>
+    </section>
+    <br /><br />
+    <footer id="page_footer">
+        <nav>
+            <ul>
+                <a href="HTML/test1.html">광과 안내 |</a>
+                <a href="HTML/test2.html"> 회사 소개 |</a>
+                <a href="test.xhtml">인재 채용 |</a>
+                <a href="">개인 정보 취급</a>
+            </ul>
+        </nav>
+        <p> Copyright(c) JSY.com</p>
+    </footer>
+</body>
+
+</html>

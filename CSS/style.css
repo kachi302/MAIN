@@ -1,0 +1,39 @@
+body {
+    background-color: antiquewhite;
+    <!-- background-image: url(../images/test1.jpg);
+    background-repeat: no-repeat;
+    --> background-size: cover;
+
+}
+
+.white {
+    background-color: azure;
+}
+
+.small {
+    line-height: 100%;
+    text-indent: 30px;
+    color: blue;
+    border: dot;
+}
+
+.big {
+    line-height: 200%;
+    text-indent: 50%
+}
+
+hr {
+    width: 1000%;
+    height: 1px;
+    border: none;
+    background-color: blue;
+}
+
+div {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+}

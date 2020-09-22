@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> target pseudo-class 를 간단한 예제 </title>
+    <style type="text/css">
+        div{display: none;}
+        :target{display: block;}      
+    </style>
+</head>
+
+<body>
+    <a href="file:///d:/HTML_TEST/target_pseudo-classEx_comment.html#newcomment">댓글달기</a>
+    <div id="newcomment">
+        <form name="commentForm">
+            이름<input type="text" name="userName"/><br>
+            비밀번호<input type="text" name="userPasswd"/><br>
+            HomePage<input type="text" name="UserHomePage" size="50"/><br>
+            내용 <br>
+            <textarea name="commentTextarea"></textarea><br>   
+            <button type="submit">댓글 저장</button>                             
+        </form>
+    </div>
+</body>
+
+</html>

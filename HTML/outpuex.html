@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width,initial-scal =1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>output 요소 및 Progress 예제</title>
+        <style type="text/css"></style>
+        <script type="text/javascript">
+            function add() {
+                var a = parseInt(prompt("첫번째 숫자",0));
+                var b = parseInt(prompt("두번째 숫자",0));
+                document.forms["resultform"]["result"].value = a+b;
+
+            }
+        </script>
+    </head>
+   <!-- <body onload="add()" >
+        <h1> output 요소의 사용방법</h1>
+        <form name="resultform">
+            <label>두수를 더한값</label> &nbsp;&nbsp;<output name="result"></output>
+        </form> 
+      
+    </body>-->
+
+    <body>
+        <p>Progress 항목 TEST and 다운 로드 중...</p>
+        <progress value="54" max="100"></progress>
+        <br>
+        <br>
+        <meter value="0.3">30%</meter></body></br>
+        <meter value="2" min="1" max="5">2/5</meter><br>
+        <meter value="0.6" high="0.9" low="0.1" optimum="0.5">60%</meter>
+
+        <br>
+        <details>만일 여러분의 웹브라우즈가 details 요소를 지원한다면, 제법 멎있을 겁니다</div></details><br>
+        <details open="open">
+            Open 옵션 사용
+        </details>
+        <br>
+        <details open="Open">
+            <summary>교육</summary> 지식과 기술 등을 가르치며 인격을 기르는 것
+        </details>
+    </body>
+
+</html>

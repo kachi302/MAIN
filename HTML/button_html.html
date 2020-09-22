@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width,initial-scal =1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Button html test</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend><b>학생정보</b></legend>
+                이름 <input type="text" name="s_name" size="20"/><br><br>
+                학번 <input type="number" name="s_number" size="15"/> <br><br>
+                <button type="submit">전송</button>
+                <button type="reset">초기화(reset)</button>
+            </fieldset>
+        </form>
+        <br><br>
+        <p>당신이 좋아 하는 과일은?</p>
+        <form>
+            <select multiple="multiple"size="2">
+                <option>apple</option>
+                <option>banana</option>
+                <option>mango</option>
+            </select>
+        </form>
+        <br>
+        <p> Data List</p>
+        <form>
+            <p> 당신이 좋아 하는 프로그램 언어를 입력해 주세요</p>
+            <input type="text" name="favorite_lang" list="pro_lang">
+            <datalist id="pro_lang">
+                <option value="C#">
+                <option value="HTML5">
+                <option value="JAVA">
+                <option value="XML">                
+            </datalist>
+        </form>
+        <br>
+        <p> 당신이 좋아 하는 과일 2?</p>
+        <form>
+            <select>
+                <option value="사과">사과</option>
+                <option value="딸기">딸기</option>
+                <option value="배" selected="selected">배</option>
+                <option value="키위" label="키위">키위(양다래 열매)</option>
+                <option value="포도">포도</option>
+            </select>
+        </form>
+        <br>
+        <p> 프로그램</p>
+        <form>
+            <select>
+                <optgroup label="프로그래밍 언어">
+                    <option value="CSharp">C#</option>
+                    <option value="Java">Java</option>
+                    <option value="Object-C">Objective-C</option>
+                </optgroup>
+                <optgroup label="Database">
+                    <option value="Oracle">Oracle</option>
+                    <option value="MS-SQL">MS-SQL</option>
+                </optgroup>
+            </select>
+        </form>
+        <br>
+        <p>Textarea Item</p>
+        <form id="userinfor">
+            이름<input type="text" name="username"><br>
+            <textarea form="userinfor" name="txauserdetails" cols="30"></textarea>
+        </form>
+        <br>
+        <p>Textarea autofocus</p>
+        <form id="userinfor">
+            이름<input type="text" name="username"><br>
+            <textarea autofocus="autofocus" maxlength="10"></textarea>
+        </form>
+    </body>
+</html>

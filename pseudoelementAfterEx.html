@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> pesudo-class emelemt 를 이용한 간단한 예제 2 </title>
+    <style>
+    
+      /*  p.bye::before{content: "안녕!";color: blue;}
+        .bye::after{content: "다음 강의여행 때 만납시다";background-color: yellow;border-style: dashed;border-width: 1px;}
+        */
+        p.bye::before{content: url("./images/biz-ex-logo.png");margin-right: .2em;}
+        .bye::after{content: url("..//HTML_TEST/images/bgn-search.png");margin-left: .2em;}
+    </style>
+</head>
+
+<body>
+    <p class="bye">여러분 오늘도 강의 듣느라 수고가 많았습니다.</p>
+</body>
+
+</html>

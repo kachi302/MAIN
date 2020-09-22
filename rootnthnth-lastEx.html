@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> root,nth-child, nth-last-child 를 간단한 예제 </title>
+    <style>
+        :root{background-color: yellow;}
+        table{border-collapse: collapse;}
+        th,td{border: none;}
+      <!--  th{background-color: black;color: white;}
+        tr:nth-last-child(1){color: red;font-weight: bolder;}
+        tr:nth-child(2n){background-color:green;}
+        th:nth-child(even){background-color: green;} 
+        td:nth-last-child(1){color: red;font-weight: bolder;}-->
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th> 도서</th>
+            <th> 수량</th>
+            <th> 구매 금액</th>
+        </tr>
+        <tr>
+            <td>부의 미래</td>
+            <td>1</td>
+            <td>19,800원</td>
+        </tr>
+        <tr>
+            <td>시골의사 박경철의 자기 혁명</td>
+            <td>1</td>
+            <td>16,000 원</td>
+        </tr>
+        <tr>
+            <td>아이디어맨</td>
+            <td>1</td>
+            <td>15,000 원</td>
+        </tr>
+        <tr>
+            <td>드라이브</td>
+            <td>1</td>
+            <td>20,000 원</td>
+        </tr>
+        <tr>
+            <td colspan="2">총구매금액</td>
+            <td>65,000 원</td>
+        </tr>
+    </table>
+</body>
+
+</html>

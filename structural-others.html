@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> root,nth-child, nth-last-child 를 간단한 예제 </title>
+    <style>
+        :root{background-color:aquamarine;}
+        table{border-collapse: collapse;}
+        th,td{border: none;}
+        tr:last-of-type{background-color: green;}
+        tr:first-of-type{background-color: rgb(126, 128, 0);}
+       /*  tr:last-child{background-color: green;}
+       tr:first-child{background-color: green;} 
+        tr:nth-of-type(even){background-color: green;}
+        tr:nth-of-type(odd){background-color: bisque;}
+        tr:nth-last-of-type(1){background-color:azure;} 
+        tr:nth-last-of-type(-n+2){background-color: green;}
+        em:only-child{background-color: aqua;}*/
+       h1:only-of-type{background-color: red;}
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th> 도서</th>
+            <th> 수량</th>
+            <th> 구매 금액</th>
+        </tr>
+        <tr>
+            <td>부의 미래</td>
+            <td>1</td>
+            <td>19,800원</td>
+        </tr>
+        <tr>
+            <td>시골의사 박경철의 자기 혁명</td>
+            <td>1</td>
+            <td>16,000 원</td>
+        </tr>
+        <tr>
+            <td>아이디어맨</td>
+            <td>1</td>
+            <td>15,000 원</td>
+        </tr>
+        <tr>
+            <td>드라이브</td>
+            <td>1</td>
+            <td>20,000 원</td>
+        </tr>
+        <tr>
+            <td colspan="2">총구매금액</td>
+            <td>65,000 원</td>
+        </tr>
+    </table><br>
+    <h1>CSS3</h1>
+    <p> CSS3은 생각보다 <em>재미</em>있습니다.</p>
+    <p><em>CSS3</em>은 생각보다 <em>재미</em>있습니다.</p>
+</body>
+
+</html>

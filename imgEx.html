@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta language="javascript">
+    <title> Embedded Contents Elements </title>
+</head>
+
+<body>
+    <img src="images/bpm_1.png" width="300" height="200" alt="Flower" usemap="#flowmap">
+    <map name="flowmap">
+        <area shape="rect" coords="50,150,100,50" href="javascript.alert('꽃이 많아요');" target="_blank" alt="꽃밭" />
+        <area shape="circle" coords="150,100,10" href="http://en.wikipedia.org/wiki/flower;" target="_blank" ,alt="위키피아에서 본 꽃의 정의" />
+    </map>
+
+    <object name="objswf" type="application/x-shockwave-flash" data="HTML/uploader.swf" width="100" height="30">
+        <param name="scr" value="lake.wmv" />
+        <param name="autostart" value="false" />
+    </object>
+
+    <p><b>PDF FIle</b></p>
+    <embed src="4500touch.pdf" type="application/pdf" width="600" height="400"/>
+
+</body>
+
+</html>

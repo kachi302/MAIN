@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width,initial-scal =1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Method</title>
+</head>
+
+<body>
+    <form name="yourform">
+        <fieldset name="studentRecord" form="yourform" style="text-align:left" disabled="disabled">
+            <legend>
+                <b>학생정보</b>
+            </legend>
+            이름 <input type="text" /><br>
+            전화번호 <input type="text" /><br>
+            주소 <input type="text" /> <br>
+        </fieldset>
+    </form>
+    <br />
+    <br />
+    <form name="H1">
+        <fieldset name="TEST 1" form="H1" style="text-align: center;">
+            <legend>TEST Form</legend>
+            이름 <input type="text" /><br>
+            전화번호 <input type="text" /><br>
+            주소 <input type="text" /> <br>
+        </fieldset>
+        <fieldset name="TEST 2" form="H1" style="text-align: left;">
+            <legend> TEST2 Form</legend>
+            회사 <input type="text" /><br>
+            주소 <input type="text" /><br>
+            우편번호<input type="number" /><br>
+        </fieldset>
+        <br>
+
+    </form>
+    <p> Label 관련 sample</p>
+    <p> 당신이 좋아 하는 영화 장르는?</p>
+    <form>
+        <input type="checkbox" name="movie" id="sel_action" />
+        <label for="sel_action"> 액션</label>
+        <br>
+        <input type="checkbox" name="movie" id="sel_horror" />
+        <label for="sel_horror">공포</label>
+    </form>
+    <br>
+    <p> Input 요소 예제</p>
+    <form>
+        <label for="jumin_number">주민번호</label>
+        <input name="jumin_number" type="text" placeholder="6자리-7자리 형태로 입력" required="required" pattern="d{6}-d{7}" />
+        <input type="submit" />
+    </form>
+    <br>
+    <p> Input 요소 설명 2</p>
+    <form>
+        <fieldset>
+            <legend><b>학생 정보 입력</b></legend>
+            이름 <input type="text" name="student_name" size="15" /><br><br>
+            학번 <input type="text" name="student_number" size="12" /><br><br>
+            비밀번호<input type="password" name="student_password" min="7" max="20" size="20" /><br><br>
+            전화번호<input type="text" name="tel" size="13" /><br><br>
+            주소<input type="text" name="address" size="50" /><br><br>
+            <input type="hidden" name="id" value="007bbang" />
+            <input type="submit" value="질의 보내기" />
+            <input type="reset" value="초기화" />
+
+        </fieldset>
+    </form>
+    <p>file Upload example</p>
+    <form>
+        <fieldset>
+            <legend><b>File Upload</b></legend>
+            업로드 할 파일을선택 <input type="file" name="file_upload" /><br>
+            <input type="image" src="upload_server.png" onsubmit="submit_form()" />
+        </fieldset>
+    </form>
+    <p> HTML 5에서 새로 추가된 Input 요소의 Type 값들</p>
+    <form>
+        <fieldset>
+            <legend><b> 개인 정보</b></legend>
+            이메일 <input type="email" name="myemail" size="30" required="" /><br><br>
+            블로그 주소<input type="url" name="myblog" size="30" required="" /><br><br>
+            전화번호 <input type="tel" name="myphone" size="13" required /><br><br>
+            <input type="submit" value="질의 보내기" />
+            <input type="reset" value="초기화" />
+        </fieldset>
+    </form>
+    <br>
+    <form>
+        <fieldset>
+            <legend><b> 날짜와 시간 관련</b></legend>
+            속성값 : datetime <input type="datetime" name="idatetime" /><br><br>
+            속성값 : datetime-local<input type="datetime-local" name="idatetimelocal" /><br><br>
+            속성값 : date<input type="date" min="2020-02-01" max="2020-12-31" /><br><br>
+        </fieldset>
+
+    </form>
+    <br>
+    <form>
+        <fieldset>
+            <legend>
+                <b>학생정보</b>
+            </legend>
+            이름 <input type="text" name="s_name" size="20" required=""/><br>
+            학번<input type="text" name="s_number" size="12" required=""/><br>
+            나이<input type="number" name="s_age" min="10" max="80" required/><br><br>
+            체중<input type="range" name="s_weight" min="20" max="120" required/><br><br>
+            좋아하는 색<input type="color" name="favorite_color" required/><br>
+            <br>
+            <input type="submit" value="질의 보내기"/>
+            <input type="reset" value="초기화"/>
+        </fieldset>
+    </form>
+</body>
+
+</html>
