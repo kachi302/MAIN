@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> combinator 예제</title>
+        <style>
+            /*combinator 관련 code*/
+            h4 em{color:red;}
+            h4 >.myclass{background-color:blueviolet;}
+          /*  h4+p{background-color: aqua;text-decoration: underline;} */
+          h4 ~p{background-color: bisque;text-decoration: underline;}
+        </style>
+    </head>
+    <body>
+        <h4>program files <span>디렉토리는 여러분들이<em>설치</em>하는 프로그램이 기본적으로 위치하는 곳입니다.</span></h4>
+        <p>program files 디렉토리 안에는 다양한 프로그램들이</p>
+        <h5>Microsoft Office</h5>
+        <p>오피스 프로그램들이 위치하고 있습니다.</p>
+        <h4>Windows 디렉토리는 <p class="myclass">여러분의 두뇌와 같은 역할을 하는 프로그램들이 들어있는 곳</p></h4>
+        <p>그러므로 잘 보호해야 하겠죠?</p>
+    </body>
+</html>
