@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> contextmenu Event example </title>
+    <script type="text/javascript">
+       window.onload = function(){
+           var vimg = document.getElementById("chartID");
+           vimg.addEventListener("dblclick",dblclkhander,false);
+           function dblclkhander(Event){
+             /*  alert("Chart.jpg 이미지를 Double Click 함") */
+               alert(this.nodeName +"요소의 이미지를 DB 하여"+event.type+"event 발생");
+           }
+       }
+    </script>
+</head>
+
+<body >
+   <p>이미지 위에서 마우스 더블 클릭</p>
+   <img id="chartID" src=".\images\test1.jpg" width="200" height="100">
+</body>
+
+</html>
