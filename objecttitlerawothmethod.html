@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Object 예제 </title>
+    <script type="text/javascript">
+        var Amusement_park = {
+            name:"Flower",
+            rel_pic:"./images/biz-ex-logo.png",
+            display:function(){
+                document.write("<br> 예전에 가본 놀이 동산의 꽃밭에서");
+            },
+            displaywith:function(inperson){
+                document.write("<br>"+inperson+"과 꽃밭에서");
+            }
+        }      
+      
+    </script>
+</head>
+
+<body>
+   <script type="text/javascript">
+       /*  document.write("제목 :"+Amusement_park.name);
+        document.write("<br><img src="+Amusement_park.rel_pic+"'>");
+        Amusement_park.display();
+        */
+       Amusement_park.name="에버랜드에서";
+       document.write("제목:"+Amusement_park.name);
+       document.write("<br><img src="+Amusement_park.rel_pic+">");
+       Amusement_park.displaywith("친구들");
+    </script>
+
+</body>
+
+</html>

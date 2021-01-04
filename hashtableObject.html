@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Object를 이용한 hash table example </title>
+    <script type="text/javascript">
+        var hash_book = new Object();
+        hash_book.title="국화와 빵";
+        hash_book.author="홍길동";
+        hash_book.pages=253;      
+
+        var shoppingItems = new Array();
+        shoppingItems["안경"]="페레가네 안경";
+        shoppingItems["노트북"]="LG Notebooks";
+        shoppingItems["스마트폰"]="삼성 갤럭시";
+        shoppingItems["항공권"]="유럽 항공권";
+
+        for (key in hash_book)
+            document.write("key :"+key + " value"+hash_book[key]+"<br>");
+
+        document.write("<br>");
+
+        for(key in shoppingItems)
+            document.write("key : "+key +" value"+shoppingItems[key]+"<br>");
+    </script>
+</head>
+
+<body>
+  
+
+</body>
+
+</html>

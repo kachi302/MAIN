@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 배열 추가 예제 </title>
+    <script type="text/javascript">
+        var shoppingItems = new Array("A","B","C");
+        var additems = new  Array("D","E");
+        var result = shoppingItems.concat(additems);
+        
+        Showitem(result);
+        document.write("<hr>");
+        document.write(shoppingItems.push("F","G")+"<br>");
+        Showitem(shoppingItems);
+        document.write(shoppingItems.unshift("X")+"<br>");
+        Showitem(shoppingItems);
+        function Showitem(inarr){
+            for(var idx=0;idx<inarr.length;idx++)
+            document.write("저장되어 있는 값 :" +inarr[idx]+"<br>");
+        }
+       
+    </script>
+</head>
+
+<body>
+  
+
+</body>
+
+</html>

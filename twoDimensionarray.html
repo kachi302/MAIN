@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 2차원 배열 예제 </title>
+    <script type="text/javascript">
+       var twoArray = new Array(3);
+       twoArray[0]=new Array(4);
+       twoArray[0][0]='사원번호';
+       twoArray[0][1]="이름";
+       twoArray[0][2]="직급";
+       twoArray[0][3]="전화번호";
+       twoArray[1]= new Array(4);
+       twoArray[1][0]="1111"
+       twoArray[1][1]="홍길동";
+       twoArray[1][2]="대리";
+       twoArray[1][3]="111-1111";
+       twoArray[2]= new Array(4);
+       twoArray[2][0]="2222"
+       twoArray[2][1]="암행어사";
+       twoArray[2][2]="사장";
+       twoArray[2][3]="222-1111";
+
+    //    function displayItems(inArray){
+    //        for(var ridx=0;ridx<inArray.length;ridx++){
+    //            for(var cidx=0;cidx<inArray[0].length;cidx++) document.write(inArray[ridx][cidx]+"\t");
+    //            document.write("<br>");
+    //        }
+    //    }
+        function displayItems(inArray){
+            for(var ridx =0;ridx<inArray.length;ridx++){
+                if(ridx==0)
+                {
+                    document.write("<table border>");
+                    document.write("<tr>");
+                        for(var cidx=0;cidx < inArray[0].length;cidx++)
+                        document.write("<th>"+inArray[ridx][cidx]+"</th>");
+                        document.write("</tr>");
+
+                }
+                else{
+                    document.write("<tr>");
+                        for(var cidx=0; cidx < inArray[0].length; cidx++)
+                            document.write("<td>"+inArray[ridx][cidx]+"</td>");
+                    document.write("</tr>");
+                }
+               
+            }
+            document.write("</table>");
+        }
+       displayItems(twoArray);
+    </script>
+</head>
+
+<body>
+  
+
+</body>
+
+</html>

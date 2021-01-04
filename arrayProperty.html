@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 배열 속성 예제 </title>
+    <script type="text/javascript">
+       var arrMovie = ["A","B","V"];
+
+       document.write("arrMovie 배열의 constructor 속성"+arrMovie.constructor);
+       document.write("<br> "+"arrMovie 배열의 요소수:"+arrMovie.length);
+
+       var Moive2 = new Array("B1","b1","b3");
+       if(Moive2.constructor==Array)
+            document.write("<br>"+"Moive2는 배열");
+        document.write("<br>");
+        var arrMountains = new Array("한라산","금정산","장산");
+        for(var item in arrMountains)
+            document.write("arrMountains 의 value"+arrMountains[item]+"<br>");
+
+        Array.prototype.ShowMe = function(){
+            for(var idx=0;idx<this.length;idx++)
+            document.write("arrMountains["+idx+"의 data :"+arrMountains[idx]+"<br>");
+        }
+        arrMountains.ShowMe();
+
+        moive2.ShowMe();
+    </script>
+</head>
+
+<body>
+  
+
+</body>
+
+</html>

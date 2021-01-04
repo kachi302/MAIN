@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> getElementByTagName() method example </title>
+    
+  
+</head>
+
+<body>
+ <ul>
+     <li> 사고 </li>
+     <li> 딸끼</li>
+     <li> 파인애플</li>
+ </ul>
+ <script type="text/javascript">
+    var retilNodes = document.getElementsByTagName("li");
+    document.write("모두"+retilNodes.length+ " 개의 li 요소가 발견 됨 <br>");
+    for(i=0;i<retilNodes.length;i++){
+        document.write(retilNodes[i].nodeName+" :"+
+        retilNodes[i].childNodes[0].nodeValue+"<br>");
+        
+    }
+
+</script>
+
+ 
+
+</script>
+  
+</body>
+
+</html>

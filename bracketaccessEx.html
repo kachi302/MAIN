@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 대괄호에 속성 접근 예제 </title>
+    <script type="text/javascript">
+    //    var book={title:"부의 미래",author:"앨빈 토플러"};
+    //    document.write("book 제목"+book["title"]+" 저자"+book["author"]);
+        var student = new Object();
+        student["student_number"]="2008032";
+        student["name"]="홍길동";
+        student["phone_number"]="010-111-1111";
+
+        for(var data in student)
+            document.write(student[data]+"\t");
+    </script>
+</head>
+
+<body>
+  
+
+</body>
+
+</html>

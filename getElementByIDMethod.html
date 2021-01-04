@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> getElementById method example </title>
+    
+  
+</head>
+
+<body id="body1">
+   <h5 id="h5_id">getElementById() Method</h5>
+   <img id="img_id" src=".\images\test1.jpg"/>
+
+   <script type="text/javascript">
+        var retbody = document.getElementById("body1");
+        var reth5 = document.getElementById("h5_id");
+        var retimg = document.getElementById("img_id");
+
+        retbody.style.backgroundColor="yellow";
+        reth5.style.fontFamily="century gothic";
+        reth5.style.fontSize="20";
+        reth5.style.color="blue";
+        retimg.style.border="2px dotted darkgreen";
+
+        var retText = document.getElementById("h5_id").innerHTML;
+        document.write("<br> h5 요소의 Text"+ retText+"<br>");
+        reth5.innerHTML="innerHtml 속성에 의해 값이 변경되었습니다.";
+
+</script>
+  
+</body>
+
+</html>

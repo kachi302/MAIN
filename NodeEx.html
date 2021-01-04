@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Node 이해 하기 example </title>
+    
+    <script type="text/javascript">
+        var documentNodes = document.documentElement;
+        document.write(documentNodes.nodeName+"<br>");
+
+        var htmlfirstChild = document.documentElement.firstChild;
+        document.write(htmlfirstChild.nodeName+"<br>");
+
+        var htmlnextsibling = document.documentElement.firstChild.nextSibling;
+        document.write(htmlnextsibling.nodeName+"<br>");
+
+        var htmllastChild = document.documentElement.lastChild;
+        document.write(htmllastChild.nodeName+"<br>");
+
+        var htmlchildnodes = document.documentElement.childNodes;
+        for(var i = 0,l=htmlchildnodes.length;i<l;i++){
+            document.write(htmlchildnodes[i].nodeName+"<br>");
+        }
+    </script>
+</head>
+
+<body >
+    <h1> node에 대하여</h1>
+    <P> Node 는 HTML 의 요소(Element), 속성(attribute) 등을 나타냅니다.</P>
+</body>
+
+</html>

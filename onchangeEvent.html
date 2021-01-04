@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> contextmenu Event example </title>
+    <script type="text/javascript">
+       function updated(element){
+           var idx = element.selectedIndex;
+           var val = element.options[idx].value;
+           var content = element.options[idx].innerHTML;
+           alert("선택한 제품은 "+val+" 항목"+content+"입니다.")
+       }
+       function submitData(element){
+           alert("제출된 이름: "+ element.yourname.value);
+       }
+    </script>
+</head>
+
+<body >
+    <P>구매할 스마트 폰 선택</P>
+    <select name="select" onchange="updated(this)">
+        <option value="1">아이폰</option>
+        <option value="2">안드로이드폰</option>
+        <option value="3"> Mango 폰</option>
+    </select>
+    <br>
+    <form>
+        <input type="text" value="노트북" onselect="alert('노트북')">
+    </form>
+    <br>
+    <br>
+    <form name="ourform" onsubmit="submitData(this)">
+        <input type="text" name="yourname">
+        <input type="submit" value="제출(submit)">
+    </form>
+</body>
+
+</html>

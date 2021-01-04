@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 배열 속성 접근 예제 </title>
+    <script type="text/javascript">
+        var shoppingItems = new Array(5);
+        shoppingItems[0]="페레가모 안경";
+        shoppingItems[1]="노트북";
+        shoppingItems[2]="DSLR";
+        shoppingItems[3]="항공권";
+        shoppingItems[4]="리엔지니어닝";
+
+        // for(var idx=0;idx<5;idx++)
+        //     document.write("Shopping Item List ["+idx+"]의 데이타"+shoppingItems[idx]+"<br>");
+        for(var idx=0;idx<shoppingItems.length;idx++){
+            document.write("Shopping Item List ["+idx+"]의 데이타"+shoppingItems[idx]+"<br>");
+        }
+        document.write("<br>");
+        for(var item in shoppingItems){
+            document.write("Shopping Item List의 data"+shoppingItems[item]+"<br>");
+        }
+    </script>
+</head>
+
+<body>
+  
+
+</body>
+
+</html>

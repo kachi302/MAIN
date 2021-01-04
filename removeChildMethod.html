@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> remove Child() method example </title>
+    
+  
+</head>
+
+<body id="body_id">
+    <div id="software">
+        <p id="language">프로그래밍</p>
+        <p id="os">운영체제</p>
+        <p id="db"> database</p>
+    </div>
+    <script type="text/javascript">
+        var parentNode = document.getElementById("software");
+        var delNode = parentNode.removeChild(document.getElementById("os"));
+        document.write("<br> 삭제된 node "+delNode.nodeName+
+                        "삭제된 node 의 text :"+delNode.innerHTML);
+
+        var partenNode2 = document.getElementById("software");
+        if(partenNode2.hasChildNodes()){
+            document.write("<br> parentNode2 노드에는 자식노드가 존재합니다.");
+        };
+        if(partenNode2.hasAttributes()){
+            document.write("<br> parentNode2 노드에는 속성 노드가 존재합니다.");
+        };
+        var parentNode2 = document.getElementById("software");
+        if(parentNode2.childNodes()){
+            document.write("<br> ParentNode2 노드에는 자식노드가 존재 합니다.");
+        }
+        if(parentNode2.hasAttribute()){
+            document.write("<br> parentNode2 노드에는 속성 노드가 존재 합니다.");
+        }       
+        else document.write("<br> div 노드에는 속성노드가 존재 안함");
+    </script>
+</body>
+
+</html>

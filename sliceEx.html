@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 배열 추가 예제 </title>
+    <script type="text/javascript">
+        //slice() 예제
+        var Items=[1,2,3,4,5,"야구","축구",8];
+        var extracted = Items.slice(4,7);
+        document.write(extracted+"<br>");
+        document.write(Items+"<br>");
+        document.write("<hr>");
+        
+        //Splice 메서드를 이용한 추출
+        var train =["KTX","새마을호","무궁화","통일호","완행열차"];
+        document.write(train.join()+"<br>");
+        document.write(train.join("/")+"<br>");
+        document.write(train.join("_")+"<br>");
+
+        document.write("<hr>");
+        var deleteitems = train.splice(1,2);
+        document.write("삭제된 데이타들 :"+deleteitems+"<br>");
+        document.write(train+"<br>");
+        document.write("<hr>");
+
+        //Splice 추가
+        var cities=["서울","부산","울산"];
+        var addeditems = cities.splice(1,0,"대전","대구");
+        document.write("추가된 항목 "+addeditems+"<br>");
+        document.write(cities+"<br>");
+        document.write("<hr>");
+        document.write(cities.toString());
+    </script>
+</head>
+
+<body>
+  
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> insert before node example </title>
+    
+  
+</head>
+
+<body >
+  <ui id="oulFruits">
+      <li id="oliApple"> 사과 </li>
+      <li id="olistrawberry"> 딸기</li>
+      <li id="oliGrape"> 포도</li>
+  </ui>    
+  <script type="text/javascript">
+      var newNode = document.createElement("li");
+      newNode.innerText="수박";
+      var retul =document.getElementById("oulFruits");
+     // retul.insertBefore(newNode,olistrawberry);
+     retul.appendChild(newNode);
+  </script>
+</body>
+
+</html>

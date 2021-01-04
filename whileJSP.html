@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> For in  예제 </title>
+    <script type="text/javascript">
+        var yourDate = new Date();
+        var curr_date = yourDate.getDate();
+        var curr_month = yourDate.getMonth();
+        curr_month++;
+        var curr_year = yourDate.getFullYear();
+        var count=1;
+        document.write(yourDate.toDateString());
+        while(count<6){
+            document.write(curr_month+"/"+curr_date+"/"+curr_year+"<br>");
+            count++;
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

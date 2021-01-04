@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Varable 예제 </title>
+    <script type="text/javascript">
+        var Message="안녕하세요";
+        function greeting() {
+            var inMessage ="여러분";
+            alert("greeting 함수 내에서 "+Message+"\t"+inMessage);
+        }
+      
+        function hello() {
+            var inMessage ="우리나라"
+            alert("hello 함수 내에서 "+Message+"\t"+inMessage);
+        }
+    </script>
+</head>
+
+<body>
+    <button type="button" onclick="greeting()"> 내부함수에서</button>
+    <button type="button" onclick="hello()"> 외부 함수에서</button>
+</body>
+
+</html>

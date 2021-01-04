@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Function 예제 </title>
+    <script type="text/javascript">
+        function greeting(){
+            alert("좋은 아침입니다.");
+        }
+        function greeting1(inyourName){
+            alert(inyourName+"님"+" 안녕하세요.");
+        }
+        function greeting2(){
+            var inValue = inyourNmae;
+            alert(inValue+"님 반갑습니다.");
+        }
+        function ret_name(){
+            return "name";
+        }
+        function whattimeNow(){
+            var now = new Date();
+            var current_Date = now.toLocaleDateString();
+            return current_Date;
+        }
+
+        function whatTimeNow(inputName){
+            var inValue = inputName;
+            alert(inValue+" 님 반갑습니다.");
+            var nowDate = new Date();
+            var current_Date = nowDate.toLocaleDateString();
+            return current_Date;
+        }
+        //greeting();
+       // var yourName="홍길동";
+        //var InputData = prompt("이름을 입력하세요","");
+        //greeting1(InputData);
+
+        // var returnValue = ret_name();
+        // document.write(returnValue);
+
+        // var returnValue = whattimeNow();
+        // document.write("<br> 현재 날짜는"+returnValue);
+
+        var inName = "홍길동";
+        var returnTime = whatTimeNow(inName);
+        document.write("현재 시간은 "+returnTime);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

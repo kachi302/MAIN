@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> on Click Event example </title>
+    <script type="text/javascript">
+       function moveFunc(){
+           alert("윈도우 창이동");
+       }
+       function resizeFunc(){
+           alert("크기가 변경됨");
+       }
+       function focusFunc(){
+           alert("윈도우 focus");
+       }
+       function blurFunc(){
+           alert("loss Focus");
+       }
+    </script>
+</head>
+
+<body onmove="moveFunc()" onresize="resizeFunc()" onfocus="focusFunc()" onblur="blurFunc()">
+    <img src=".\images\test1.jpg"/><br>
+    <a href="http://172.28.32.30/BPM"> BPM site 이동</a>
+
+</body>
+
+</html>

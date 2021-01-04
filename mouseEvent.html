@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Mouse Event example </title>
+    <script type="text/javascript">
+        function   mousemoveFunc(){
+            alert("마우스 포인트가 이동 중");
+        }     
+        function dbclickFunc(){
+            alert("링크를 더블 클릭했습니다.");
+        }
+    </script>
+</head>
+
+<body >
+    <img src=".\images\test1.jpg" onmousemove="alert('눌러진 마우스 버튼이 올라옵니다.')"
+    onmousemove="mousemoveFunc()"/><br>
+    <a href="#" ondblclick="dbclickFunc()">제 블로그로 이동</a>
+
+</body>
+
+</html>

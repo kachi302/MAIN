@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=ko">
+    <title> Canvas path 예제 </title>
+    <style>
+        canvas{border: 1px solid red;}
+    </style>
+    <script type="text/javascript">
+       window.onload=function(){
+           var canvas=document.getElementById("yourcanvas")
+           var context = canvas.getContext("2d");
+           context.strokeStyle="blue";
+           context.fillStyle="red";
+           context.lineWidth=5;
+
+           context.beginPath();
+           context.moveTo(10,10);
+           context.lineTo(100,10);
+           context.stroke();
+            // 열린 경로 그리기
+           context.beginPath();
+           context.moveTo(30,100);
+           context.lineTo(60,30);
+           context.lineTo(90,100);
+           context.stroke();
+           // 닫힌 경로 그리기;
+           context.beginPath();
+           context.moveTo(120,100);
+           context.lineTo(150,30);
+           context.lineTo(180,100);
+           context.lineTo(120,100);
+           context.closePath();
+           context.lineTo(120,150);
+           context.stroke();
+            //rect() 메서드 예
+            context.beginPath();
+            context.rect(30,160,100,50);
+            context.fillStyle="pink";
+            context.fill();
+            context.lineWidth=10;
+            context.strokeStyle="black";
+            context.stroke();
+       }
+    </script>
+  
+</head>
+
+<body>
+    <canvas id="yourcanvas" width="400" height="300">
+
+    </canvas>
+  
+</body>
+
+</html>

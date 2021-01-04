@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=ko">
+    <title> Canvas path 예제 </title>
+    <style>
+        canvas{border: 1px solid red;}
+    </style>
+    <script type="text/javascript">
+       window.onload=function(){
+           var canvas=document.getElementById("yourcanvas")
+           var context = canvas.getContext("2d");
+            context.beginPath();
+            context.lineWidth=10;
+            context.strokeStyle="blue";
+            context.lineCap="butt";
+            context.moveTo(10,30);
+            context.lineTo(100,30);
+            context.stroke();
+
+            context.beginPath();
+            context.lineWidth=10;
+            context.strokeStyle="red";
+            context.lineCap="round";
+            context.moveTo(10,50);
+            context.lineTo(100,50);
+            context.stroke();
+
+            context.beginPath();
+            context.lineWidth=10;
+            context.strokeStyle="green";
+            context.lineCap="square";
+            context.moveTo(10,70);
+            context.lineTo(100,70);
+            context.stroke();
+       }
+    </script>
+  
+</head>
+
+<body>
+    <canvas id="yourcanvas" width="400" height="300">
+
+    </canvas>
+  
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> replaceChild() method example </title>
+    
+  
+</head>
+
+<body id="body_id">
+    <p id="person"> 링컨</p>
+    <script type="text/javascript">
+        var newNode = document.createElement("p");
+        var newText = document.createTextNode("정약용");
+        newNode.appendChild(newText);
+
+        var parentNode = document.getElementById("body_id");
+        var oldNode = document.getElementById("person");
+        var replaceNode= parentNode.replaceChild(newNode,oldNode);
+        document.write("원래의 node의 Text 값 :"+oldNode.innerHTML);
+    </script>
+</body>
+
+</html>

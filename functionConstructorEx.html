@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Function 예제 </title>
+    <script type="text/javascript">
+       //cities 객체 정의
+       function cities(innationName,incityname){
+           this.nationName = innationName;
+           this.cityName = incityname;
+
+           this.display = showCities;
+       }
+       function showCities(){
+           document.write("나라이름"+this.nationName);
+           document.write("<br> 도시 이름"+this.cityName);
+       }
+        
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var yourCities = new cities;
+        yourCities.display();
+        document.write("<hr>");
+
+        var ourCities = new cities("대한민국","부산");
+        ourCities.display();
+    </script>
+</body>
+
+</html>
