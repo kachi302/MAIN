@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=ko">
+    <title> Canvas path 예제 </title>
+    <style>
+        canvas{border: 1px solid red;}
+    </style>
+    <script type="text/javascript">
+       window.onload=function(){
+           var canvas=document.getElementById("yourcanvas")
+           var context = canvas.getContext("2d");
+           var centerX=50;
+           var centerY=50;
+           var radius = 40;
+           var startAngel=0;
+        //    var endingAngel=0.25*Math.PI;
+            var endingAngel=2*Math.PI;
+           var counterclockwise=false;
+           context.arc(centerX,centerY,radius,startAngel,endingAngel,counterclockwise);
+
+           context.lineWidth=15;
+           context.strokeStyle="black";
+           context.stroke();
+        
+       }
+    </script>
+  
+</head>
+
+<body>
+    <canvas id="yourcanvas" width="400" height="300">
+
+    </canvas>
+  
+</body>
+
+</html>
