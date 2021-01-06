@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=ko">
+    <title> Canvas text 예제 </title>
+    <style>
+        canvas{border: 1px solid red;}
+    </style>
+    <script type="text/javascript">
+       window.onload=function(){
+           var c=document.getElementById("yourcanvas")
+           var ctx = c.getContext("2d");
+           ctx.shadowColor="red";
+           ctx.shadowOffsetX=10;
+           ctx.shadowOffsetY=10;
+           ctx.shadowBlur=10;
+           ctx.fillStyle="#B3E3F5";
+           ctx.fillRect(20,20,380,100);
+
+            var theString="HTML 5 canvas 에 텍스트 쓰기";
+            ctx.fillStyle ="black";
+            ctx.shadowColor ="rgba(0,0,0,0,5)";
+            ctx.shadowOffsetX=5;
+            ctx.shadowOffsetY=5;            
+            ctx.shadowBlur=5;
+            ctx.font="20pt Century Gothic";
+
+            ctx.fillText(theString,35,75);
+
+            ctx.lineWidth=20;
+            ctx.shadowColor="rgba(150,0,150,5)";
+            ctx.shadowBlur=15;
+            ctx.shadowOffsetX=-15;
+            ctx.shadowOffsetY=-15;
+            ctx.strokeStyle="red";
+            ctx.beginPath();
+            ctx.moveTo(20,200);
+            ctx.lineTo(220,200);
+            ctx.stroke();
+
+       }
+    </script>
+  
+</head>
+
+<body>
+    <canvas id="yourcanvas" width="500" height="300">
+
+    </canvas>
+  
+</body>
+
+</html>
