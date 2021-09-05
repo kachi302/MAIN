@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EverDevel - JavaScript - onmouseover event</title>
+    <script>
+        window.onload = function(){
+            var target=document.getElementsByTagName('p')[0];
+            target.addEventListener('mouseover',function(){
+                target.style.color="red";
+            });
+            target.addEventListener('mouseout',function(){
+                target.style.color="black";
+            });
+
+            target.addEventListener('mousedown',function(){
+                traget.style.color="white";
+            });
+
+            target.addEventListener('mouseup',function(){
+                target.style.color="blue";
+            });
+        };
+    </script>
+</head>
+<body>
+    <p> here </p>
+</body>
+</html>

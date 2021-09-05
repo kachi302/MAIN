@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클릭할때 마다 크기가 다른 새창 띄우기 </title>
+    <style type="text/css">
+        .geston{font-size: 9pt;line-height: 140%;color: #000000;font-family:'Courier New', Courier, monospace;}
+    </style>
+    <script language='JavaScript'>
+        function new1(){
+            open("drop-down.html","","left=0,top=0,scrollbars=no,resizable=no,width=200,hegiht=200");
+        }
+        function new2(){
+            open("drop-down.html","","left=0,top=0,scrollbars=no,resizable=no,width=200,hegiht=400");
+        }
+    </script>
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+   <div align="center">
+       <table width="400" border="0" cellspacing="0" cellpadding="0">
+           <tr>
+               <td align="center" colspan="2">
+                   <img src="./images/(Sample)Logo.bmp" width="331" height="95">
+               </td>
+           </tr>
+       </table>
+       <p>
+           <table width="520" border="0" cellspacing="0" cellpadding="10">
+               <tr>
+                   <td width="190">
+                       <a href="javascript:new1()"><img src="./images/(Sample)Logo.bmp" width="164" height="88" border="0"></a>
+                   </td>
+                   <td width="330" class="geston">
+                       <p><font color="#006699"><b> 클릭할때 다른 크기</b></font></p>
+                       <p> ++ 가로 200, 세로 200 크기 new windows<br>
+                        ++ left button click
+                    </p>
+                   </td>
+               </tr>
+               <tr>
+                   <td width="190">
+                       <a href="javascript:new2();">
+                           <img src="./images/bgn-search.png" width="164" height="88" border="0">
+                       </a>
+                   </td>
+                   <td width="330" class="gestone">
+                       <p>
+                           <font color="#006699"><b>new windows</b></font>
+                       </p>
+                       <p> ++ 가로 500, 세로 500 크기의 windows<br>
+                            ++ click left button 
+                        </p>
+                   </td>
+               </tr>
+           </table>
+       </p>
+   </div>
+</body>
+</html>

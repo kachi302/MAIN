@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>request 1</title>
+</head>
+<body>
+    <h2> 학생 정보 입력</h2>
+    <form method="post" action="request_1.jsp" >
+        학번 : <input type="text" name="studentNum"><br>
+        전공 : <select multiple="multiple" name="major">
+            <option value="전산과" selected="selected"> 전산과</option>
+            <option value="국문과">국문과</option>
+            <option value="기계과">기계과</option>
+            <option value="경영학과">경영학과</option>
+            <option value="물리학과">물리학과</option>
+            <option value="수학과">수학확</option>
+        </select>
+        <br>
+        취미 : <select multiple="multiple" name="habit">
+            <option value="등산">등산</option>
+            <option value="낚시">낚시</option>
+            <option value="수영">수영</option>
+            <option value="게임">게임</option>
+            <option value="바둑">바둑</option>
+            <option value="장기">장기</option>
+        </select>
+        <br>
+        <input type="submit" value="보내기">
+    </form>
+</body>
+</html>

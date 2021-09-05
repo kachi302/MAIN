@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Jeon SY" content="TEST">
+    <title>View Edit date of HTML</title>
+    <style type="text/css">
+        .geston{font-size: 9pt; line-height: 140%; color: #000000; font-family: 'Courier New', Courier, monospace;}
+    </style>
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+   <div align="center">
+       <table width="400" border="0" cellspacing="0" cellpadding="0">
+           <tr>
+               <td align="center">
+                   <img src="./images/(Sample)Logo.bmp" width="331" height="95">
+               </td>
+           </tr>
+           <tr>
+               <td class="geston">
+                   <FONT color="#000000"><b>문서의 수정된 날짜 보여주기</b></FONT>
+                   <p>++ 현재 페이지의 최종 수정일자 보여주기 예제</p><br>
+                   ++ 아래 최종 수정일은 자동으로 웹페이지의 수정일자를 알려줌.<br>
+                   <br>
+               </td>
+           </tr>
+           <tr>
+               <td class="geston" align="center">
+                   <b><FONT color="#0099CC">최종 수정일</FONT></b>:
+                   <script language="javascript">
+                       var months="JanFebMarAprMayJunJulAugSepOctNovDec";
+                       var update = new Date(document.lastModified);
+                       dd = update.getDate();
+                       mm = update.getMonth()*3;
+                       ma = months.substring(mm,mm+3);
+                       yy = update.getFullYear();
+                       document.write("<FONT size=-1>"+ma+"."+dd+"."+yy+"</FONT>");
+                   </script>
+               </td>
+           </tr>
+       </table>
+   </div>
+</body>
+</html>

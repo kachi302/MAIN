@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Jeon SY" content="TEST">
+    <title>View Edit date of HTML</title>
+    <style type="text/css">
+        .geston{font-size: 9pt; line-height: 140%; color: #000000; font-family: 'Courier New', Courier, monospace;}
+    </style>
+    <script language="javascript">
+        var pos=0;
+        var a=0;
+        var message = new Array();
+        message[0]="안녕하세요? Geston 입니다.";
+        message[1]="지금 보고 계신 소스는 전체 네줄로 만들어 졌습니다.";
+        message[2]="한번 보구 11111";
+        message[3]="따라 해 보세요.";
+        function typing(){
+            a = a+1;
+            document.myform.typetxt.vlaue=message[pos].substring(0,a);
+            if(a==message[pos].length+5){
+                pos = pos +1;
+                a=0;
+            }
+            if(pos>3){
+                pos=0;
+            }
+            setTimeout("typing()", 100);
+        }
+    </script>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" onload="typing()">
+    <div align="center">
+        <table width="400" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td align="center">
+                    <img src="./images/btn_blank_10.gif" width="331" height="95">
+                </td>
+            </tr>
+            <tr>
+                <td class="geston" align="center">
+                    <FONT color="#006699"><B>폼안에 글자 타이핑 효과</B></FONT>
+                </td>
+            </tr>
+            <tr>
+                <td class="geston" align="center">
+                    <FORM name="myform">
+                        <input type="text" name="typetxt" size="50">
+                    </FORM>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

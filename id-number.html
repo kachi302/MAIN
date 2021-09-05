@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주민번호 입력시 다음 칸으로 자동으로 넘기기 </title>
+    <script language="javascript">
+        function check(){
+            var str=document.jumin.jumin1.value.length;
+            if(str==6)
+            document.jumin.jumin2.focus();
+        }
+    </script>
+   
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+    <div align="center">
+        <table width="421" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td align="center">
+                    <img src="./images/biz-ex-logo-2x.png" width="421" height="112">
+                </td>
+                <FORM method="POST" name="jumin">
+                    <tr>
+                        <td class="geston" width="421" height="35" background="./images/btn_balank.gif" align="center">
+                            <font face="돋움" size="-1"> 주민 번호</font>
+                            <input name="jumin1" size="6" onkeyup="check();" maxlength="6">
+                            <input name="jumin2" size="7" maxlength="7">
+                        </td>
+                    </tr>
+                </FORM>
+            </tr>
+            <td>
+                <img src="./images/btn_ok.png" width="421" height="4">
+            </td>
+        </table>
+    </div>
+
+  
+</body>
+</html>

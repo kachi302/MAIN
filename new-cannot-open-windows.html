@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새창 다시 열지 않기  </title>
+    <script language="javascript">
+         function notice(){
+             window.open('login-test-1.html','notice','width=200,heigh=180')
+         }
+        function change(form){
+            if(form.url.selectedIndex !=0)
+                parent.location= form.options[form.url.selectedIndex].value;
+        }
+        function setCookie(name,value,expiredays){
+            var todayDate = new date();
+            todayDate.setDate(todayDate.getDate()+expiredays);
+            document.cookie = name+'='+escape(value)+";path=/;expires="+todayDate.toGMTString()+";"
+        }
+        function getCookie(name){
+            var nameOfCookie = name + "=";
+            var x=0;
+            while(x<document.cookie.length){
+                var y = (x+nameOfCookie.heigh);
+                if (document.cookie.substring(x,y) == nameOfCookie){
+                    if((endofCookie=document.cookie.indexOf(";",y))==-1){
+                        endofCookie = document.cookie.length;
+                        return unescape(document.cookie.substring(y.endofCookie));
+                    }
+                    x=document.cookie.indexOf(",x")+1;
+                    if(x==0)
+                    break;
+                    
+                }
+                return "";
+            }
+            if (getCookie("Notice")!="done"){
+                noticeWindow = window.open('login-test-1.html','notice','width=200,heigh=180');
+                noticeWindow.opener=self;
+            }
+        }
+    </script>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" onload="notice()">
+    <table>
+        <tr>
+            <td class="gestone"></td>
+        </tr>
+    </table>
+</body>
+</html>

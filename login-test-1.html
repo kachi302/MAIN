@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Jeon SY" content="TEST">
+    <title>Member Login</title>
+
+    <style type="text/css">
+        .INPUT{background-color: #FFFFFF;color: black;border: 1px solid black;font-size: 9px;}
+        .FONT{font-size: 9px; color: #000000;}
+        #tooltip{
+            position: absolute;
+            top:0;
+            left:0;
+            border: solid 1 black;
+            background: #ff77ff;
+            color: black;
+            font-size: 9pt;
+            width: 150;
+            padding: 2;
+            overflow: hidden;
+            z-index: 10;
+            display: none;
+            filter:alpha(opacity= 50);
+        }
+    </style>
+
+    <script language="Javascript">
+        function showtip(text){
+            tooltip:innerText=text;
+            tooltip.style.display="inline";
+        }
+
+        function hidetip(){
+            tooltip.style.display="none";            
+        }
+
+        function movetip(){
+            tooltip.style.pixelTop=event.y+document.body.scrollTop;
+            tooltip.style.pixelLeft=event.x+document.body.scrollLeft+10;
+        }
+        document.onmousemove=movetip;
+        function setCookie(name,value,expiredays){
+            var todayDate= new Date();
+            todayDate.setDate(todayDate.getdate()+expires);
+            document.cookie=name+"="+escape(value)+":path=/;expires="+todayDate.toGTMstring()+";"
+        }
+        function closeWin(){
+            if(document.forms[0].notice.checked)
+            setCookie("Notice","done",1);
+            self.close();
+        }
+    </script>
+
+
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+    <span id=tooltip></span>
+    <center>
+        <a href="#" onmouseover="showtip('툴립효과2');"
+        onmouseout="hidetip();"> 보여라</a>
+    </center>
+    <table width="160" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td><img src="./images/biz-ex-logo.png" width="160" height="25"></td>
+        </tr>
+        <table width="200" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td rowspan="7" background="./images/icon1.bmp" width="1"></td>
+                <td colspan="2" bgcolor="#E3E0D8"><img src="./images/icon1.bmp" height="5"></td>
+                <td rowspan="7" background="./images/icon1.bmp" width="1"></td>
+            </tr>
+            <tr>
+               <td bgcolor="#E3E0D8" width="120" align="right" class="font">아이디&nbsp;</td>
+               <td bgcolor="#E3E0D8" width="98">
+                   <input type="text" id value="" size="11" class="input">
+               </td>
+            </tr>
+            <tr>
+                <td bgcolor="#E3E0D8" width="120" align="right" class="font">비밀번호&nbsp;</td>
+                <td bgcolor="#E3E0D8" widhth="98" >
+                    <input type="text" id value="" size="11" class="input">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="#E3E0D8">
+                    <img src="./images/icon2.bmp" height="5">
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#E3E0D8" width="120" >&nbsp;</td>
+                <td bgcolor="#E3E0D8" width="98">
+                    <input type="image" name="./images/ic_login.png" width="98" height="21" alt="login" border=0>
+                </td>              
+            </tr>
+           <tr>
+               <td colspan="2" bgcolor="#E3E0D8">
+                   <img src="./images/icon1.bmp" height="6">
+               </td>
+           </tr>
+           <tr>
+               <td style="font-size: 9pt;" colspan="2" background="./images/icon1.bmp" height="1"></td>
+              
+           </tr>
+        </table>
+
+    </table>
+    <form>
+        <input type="CHECKBOX" name="Notice" value=""> 다시 열지 않음 <br><br>
+        <a href="javascript.history.onclick=closeWin()"> 닫기</a>
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셀 내에서 줄 바꿈 금지</title>
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+    <table border="1" width="500">
+        <tr>
+            <td>회사명</td><td>제우미디어</td>
+        </tr>
+        <tr>
+            <td>주소</td>
+            <td> 서울 마포구 상수동 324-1 한주 빌딩 5층 대표전화번호 : 111-1111</td>
+        </tr>
+        
+    </table>
+    <br>
+    <p> 자동으로 줄바꿈 금지</p>
+    <table border="1" width="200">
+        <tr>
+            <td nowrap>회사명</td><td>제우미디어</td>
+        </tr>
+        <tr>
+            <td nowrap>주소</td>
+            <td nowrap> 서울 마포구 상수동 324-1 한주 빌딩 5층 대표전화번호 : 111-1111</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1" width="500" cellspacing="0" cellpadding="0" bordercolor="blue">
+        <caption> Test Table</caption>
+        <tr bgcolor="#FF00FF">
+            <td align="center" width="200">년월</td><td align="center"> 금액</td>            
+        </tr>
+        <tr>
+            <td align="center">2020-01</td><td align="right">1000</td>
+        </tr>
+        <tr>
+            <td align="center">2020-02</td><td  align="right">1000</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="skyblue"  >합계</td><td  align="right">2000</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
