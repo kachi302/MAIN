@@ -29,13 +29,12 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle"
-                            data-toggle="dropdown" role="button" aria-haspopup="true"
-                            aria-expanded="fales"> 접속<span class="caret"></span>
-                        </a>    
+                        <a href="#" class="dropdown-toggle" 
+                            data-toggle="dropdown" role="button" aria-haspopup="true" 
+                            aria-expanded="fales"> 접속하기<span class="caret"></span></a>    
                         <ul class="dropdown-menu">
-                            <li class="active"><a href="login.jsp"> 로그인 </a></li>
-                            <li><a href="login.jsp"> 회원 가입 </a></li>
+                            <li class="active"><a href="login.jsp">로그인</a></li>
+                            <li><a href="join.jsp"> 회원 가입 </a></li>
                         </ul>
                     </li>    
                 </ul>

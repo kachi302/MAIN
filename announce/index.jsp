@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title> Hello World </title>
+        <title> JSP Webpage </title>
     </head>
     <body>
         <script>

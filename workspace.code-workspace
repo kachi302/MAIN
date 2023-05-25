@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "path": "..\\EIS_CLOUD_SERVER"
+    },
+    {
+      "path": "."
+    },
+    {
+      "path": "..\\python_dev"
+    },
+    {
+      "path": "../python_dev/item_cost_update"
+    }
+  ],
+  "settings": {},
+  "launch": {
+    "version": "0.2.0",
+    "configurations": []
+  }
+}
